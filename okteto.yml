@@ -1,0 +1,8 @@
+name: react-getting-started
+image: okteto/react-getting-started:dev
+build:
+  context: .
+  target: dev
+command:
+- bash
+workdir: /usr/src/app
