@@ -6,3 +6,5 @@ build:
 command:
 - bash
 workdir: /usr/src/app
+forward:
+  - 8080:8080
