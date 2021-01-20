@@ -1,10 +1,12 @@
 name: react-getting-started
-image: okteto/react-getting-started:dev
-build:
+image:
+  name: okteto.dev/react-getting-started:dev
   context: .
   target: dev
-command:
-- bash
-workdir: /usr/src/app
+command: bash
 forward:
   - 8080:8080
+sync:
+  - .:/usr/src/app
+persistentVolume:
+  enabled: false
