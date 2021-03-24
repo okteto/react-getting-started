@@ -1,4 +1,5 @@
 name: react-getting-started
+autocreate: true
 image:
   name: okteto.dev/react-getting-started:dev
   context: .
